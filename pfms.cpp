@@ -121,30 +121,17 @@ int main() {
     FILE *fp, *ft;
     char another, choice;
 
-    struct custumor {
-        char plate_number[30];
-    };
-
-    struct custumor e;
-    char xfull_name[30];
-
-    long int recsize;
-
     fp=fopen("users.txt","rb+");
 
     if (fp == NULL) {
         fp = fopen("users.txt","wb+");
 
-        if (fp==NULL)
+        if (fp == NULL)
         {
              puts("Cannot open file");
              return 0;
         }
     }
-
-
- recsize = sizeof(e);
-
 
     while(1) {
          system("cls");

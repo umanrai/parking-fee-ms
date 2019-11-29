@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Files to be ignored
+*.dat
+*.txt
